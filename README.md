@@ -19,7 +19,7 @@ This project implements a 3D-aware face swapping technique. By using a **56-dime
 * **ONNX Runtime:** Requires an older version (`1.17.1`) for model compatibility.
 
 ### 📦 Dependency Versions
-```bash
+
 # Core Diffusion & Transformers
 pip install diffusers==0.27.2 transformers==4.40.0 accelerate==0.29.3
 
@@ -70,3 +70,5 @@ Memory Management:
 Python
 import os
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:128"
+
+
