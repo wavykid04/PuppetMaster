@@ -1,0 +1,14 @@
+diffusers==0.27.2
+transformers==4.40.0
+accelerate==0.29.3
+insightface==0.7.3
+onnxruntime-gpu==1.17.1
+face-alignment==1.4.1
+kornia==0.7.2
+scipy==1.11.4
+torch>=2.0.0
+torchvision
+opencv-python
+Pillow
+matplotlib
+numpy

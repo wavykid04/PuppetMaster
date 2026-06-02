@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.so
+.env
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+outputs/
+checkpoints/
+.insightface/
+buffalo_sc/
+buffalo_l/
