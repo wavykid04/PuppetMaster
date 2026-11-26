@@ -1,0 +1,29 @@
+# Single source of truth for inference settings (replaces the IMG_SIZE values
+# that were hard-coded in notebook cells 5, 7 and 36).
+seed: 42
+
+device: auto          # auto | cuda | cpu
+dtype: auto           # auto (fp16 on cuda, fp32 on cpu) | float16 | float32
+
+img_size: 512         # must be divisible by 8; 512 needs ~8 GB VRAM, use 192 for ~4 GB
+num_steps: 50         # DDIM denoising steps
+inversion_steps: 30   # DDIM inversion steps
+guidance_scale: 3.5
+strength: 0.65
+blend_hardness: 0.5
+
+models:
+  # The notebook actually loads SD v1-4 (README previously said 1.5).
+  sd_model_id: CompVis/stable-diffusion-v1-4
+  clip_model_id: openai/clip-vit-base-patch32
+  insightface_name: buffalo_sc
+  bisenet_path: weights/bisenet_face_parsing.pth
+  # Trained adapter checkpoint. None exists yet: adapters are randomly initialised.
+  adapter_checkpoint: null
+
+lambdas:
+  id: 2.5
+  pose: 0.3
+  shape: 1.2
+  expr: 0.3
+  light: 0.5

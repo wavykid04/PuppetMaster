@@ -1,3 +1,4 @@
+# Kept for Colab users; pyproject.toml is the source of truth (pip install -e ".[full]").
 diffusers==0.27.2
 transformers==4.40.0
 accelerate==0.29.3
