@@ -15,3 +15,11 @@ checkpoints/
 .insightface/
 buffalo_sc/
 buffalo_l/
+*.ckpt
+*.bin
+weights/
+.cache/
+.pytest_cache/
+face-parsing.PyTorch/
+*.png
+!assets/*.png
